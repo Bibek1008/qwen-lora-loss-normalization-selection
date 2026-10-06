@@ -1,0 +1,39 @@
+{
+  "classification": "SUPPORTED",
+  "scope": "synthetic associative recall with held-out prompt templates, not facts",
+  "seeds": [
+    {
+      "seed": 20260817,
+      "selected": "example",
+      "validation_loss": {"token": 0.528, "example": 0.056},
+      "test_exact": {"token": 0.041666666666666664, "example": 0.8645833333333333},
+      "test_nll": {"token": 0.7599106188949939, "example": 0.06314616373210123}
+    },
+    {
+      "seed": 20260818,
+      "selected": "token",
+      "validation_loss": {"token": 0.085, "example": 0.519},
+      "test_exact": {"token": 0.7916666666666667, "example": 0.2708333333333333},
+      "test_nll": {"token": 0.13453871432387057, "example": 0.5478924612713675}
+    },
+    {
+      "seed": 20260819,
+      "selected": "token",
+      "validation_loss": {"token": 0.04, "example": 0.213},
+      "test_exact": {"token": 0.875, "example": 0.53125},
+      "test_nll": {"token": 0.09110091297591297, "example": 0.2176644536019536}
+    }
+  ],
+  "aggregate": {
+    "selected": {"mean_exact": 0.84375, "worst_exact": 0.7916666666666667, "mean_nll": 0.09626193034396159, "worst_nll": 0.13453871432387057},
+    "always_token": {"mean_exact": 0.5694444444444445, "worst_exact": 0.041666666666666664, "mean_nll": 0.3285167487315925, "worst_nll": 0.7599106188949939},
+    "always_example": {"mean_exact": 0.5555555555555555, "worst_exact": 0.2708333333333333, "mean_nll": 0.2762343595351408, "worst_nll": 0.5478924612713675}
+  },
+  "gates": {
+    "all_runs_valid": true,
+    "selected_lower_nll_every_seed": true,
+    "selected_within_exact_tolerance_every_seed": true,
+    "selected_mean_better_than_both_fixed": true,
+    "selected_worst_seed_better_than_both_fixed": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "final_validation_loss": {"example": 0.213, "token": 0.04},
+  "fingerprints": {
+    "data_manifest.json": "6e4cbdeacfee45ed1b3d201d2168d52256e77f1e762d0ee523ca00b7d07efe71",
+    "example_adapter.safetensors": "4b987192a25eab0f33269227221c863803c2dfbad9372f89d9932207662d6303",
+    "example_receipt.json": "af5dcf86992fd099a655ba619925765fee3690a9da84797773516bb181a8d588",
+    "example_stdout.log": "515bd8ef63d065e474ff2f788e35f89e69235d4ee5cd54259a6ab0ff54fe8a3a",
+    "historical_train_condition.py": "c59c687bad6b1a4b87160d7df3c9f1160adb80edbaa4a7be255810d453a4139d",
+    "protocol.md": "9f3958f525d718ea1706e864837b0ef60bb6e27fa9ce87dbb68fa562abce6ea9",
+    "token_adapter.safetensors": "7d61557f3bedd4b8dd8823954452494644a90aa7cb9c72ab1ab5ca561a6c5e9e",
+    "token_receipt.json": "4ca402dff32918963e03b97f718aee21264a246a03c8d6ec61a00ffae439e221",
+    "token_stdout.log": "1d775509cfccfbcc6d707a640f7c9b88c26bb37214f5482bcb2e121844725c2c"
+  },
+  "protocol": "4.0-frozen-validation-selection",
+  "rule": "lower final validation loss at update 576; ties choose token",
+  "seed": 20260819,
+  "selected_condition": "token",
+  "test_evaluation_status_at_seal": "NOT_STARTED"
+}

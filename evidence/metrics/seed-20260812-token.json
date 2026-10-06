@@ -1,0 +1,63 @@
+{
+  "adapter": "runs/seed-20260812-token/artifact",
+  "environment": {
+    "mlx": "0.31.2",
+    "mlx-lm": "0.31.3",
+    "python_executable": "python",
+    "python_version": "3.12.8 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 10:37:40) [Clang 14.0.6 ]"
+  },
+  "fingerprints": {
+    "adapter_config.json": "bc80aebd8be50f8c83f877902cd19a3caf27687658a3314cf391a9252897d7de",
+    "adapters.safetensors": "e9b6a9d63aacf914e3f9976970ccebf4ea43e9d8a7d565a73924074062917ad8",
+    "data_manifest.json": "6e4cbdeacfee45ed1b3d201d2168d52256e77f1e762d0ee523ca00b7d07efe71",
+    "evaluate_condition.py": "e4fe991feb32dc4ad7108eff4e88462fa85bcd39e1bfc2f9e918ec3b7a79f647",
+    "model.safetensors": "add1354a3e8ddf16fd4308ce9556b2b11c0b6e45863f8898e28e0a0bb8ae18e8",
+    "model_config.json": "7319e769e58a8d819f67a83b3d413624a4a143dccde0d0d326b223ca74f71157"
+  },
+  "generation": {
+    "long": {
+      "exact_match": 0.75,
+      "example_nll_mean": 0.07341425935175935,
+      "examples": 48,
+      "target_token_accuracy": 0.978021978021978,
+      "token_nll": 0.07326007326007326
+    },
+    "short": {
+      "exact_match": 0.6666666666666666,
+      "example_nll_mean": 0.3173611111111111,
+      "examples": 48,
+      "target_token_accuracy": 0.9053254437869822,
+      "token_nll": 0.32322485207100593
+    }
+  },
+  "label": "seed-20260812-token",
+  "normalization": "strip outer whitespace and collapse internal whitespace; case-sensitive",
+  "resource": {
+    "active_mlx_memory_gb": 0.34444476,
+    "cache_mlx_memory_gb": 0.031395754,
+    "peak_mlx_memory_gb": 0.733398376,
+    "wall_seconds": 15.913420915603638
+  },
+  "summary": {
+    "balanced_exact_match": 0.7083333333333333,
+    "balanced_example_nll": 0.19538768523143524,
+    "balanced_target_token_accuracy": 0.9416737109044802,
+    "short_minus_long_exact_gap": -0.08333333333333337,
+    "worst_skill_exact_match": 0.6666666666666666
+  },
+  "teacher_forced": {
+    "long": {
+      "example_nll_mean": 0.07341425935175935,
+      "examples": 48,
+      "target_token_accuracy": 0.978021978021978,
+      "token_nll": 0.07326007326007326
+    },
+    "short": {
+      "example_nll_mean": 0.3173611111111111,
+      "examples": 48,
+      "target_token_accuracy": 0.9053254437869822,
+      "token_nll": 0.32322485207100593
+    }
+  },
+  "test_scope": "held-out prompt template over training facts; not held-out facts"
+}
